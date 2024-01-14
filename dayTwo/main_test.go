@@ -8,7 +8,7 @@ import (
 )
 
 func TestSumar(t *testing.T) {
-	filePath := "C:\\Users\\Luis\\go\\aoc\\aoc.txt"
+	filePath := "C:\\Users\\Luis\\go\\aoc\\dayTwo\\aoc.txt"
 
 	b, _ := os.ReadFile(filePath)
 
@@ -17,12 +17,12 @@ func TestSumar(t *testing.T) {
 		input    []byte
 	}{
 		{
-			expected: 281,
+			expected: 8,
 			input:    b,
 		},
 	}
 
 	for _, test := range tests {
-		assert.Equal(t, test.expected, partone(b))
+		assert.Equal(t, test.expected, partTwo(b))
 	}
 }
